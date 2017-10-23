@@ -1,0 +1,24 @@
+#a1 {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    background:red;
+    height: 60%;
+    width: 25%;
+    border: 3px solid #8E0303;
+}
+
+#a2 {
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    background: blue;
+    height: 60%;
+    width: 25%;
+    border: 3px solid #00007D;
+}
+
+#head1 {
+    text-align: center;
+    margin-top: 5%;
+}

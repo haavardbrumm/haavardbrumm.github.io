@@ -1,0 +1,73 @@
+#main {
+    width: 600px;
+    height: 600px;
+    position: relative;
+    border: 2px solid red;
+    margin: 5%;
+    background-image: url(floppybackground.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: cover;
+    animation: rullSjukt 3s linear infinite;
+    overflow: hidden;
+}
+
+@keyframes rullSjukt {
+    from {background-position-x: 600px;}
+    to {background-position-x: 0px;}
+  }
+
+@keyframes rullSjukt2 {
+    from {background-position-x: 650px;}
+    to {background-position-x: -250px;}
+}
+
+#bird {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 255px;
+    left: 255px;
+    background-image: url(floppybird.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 39ms;
+}
+
+#b1, #b2 {
+    background-image: url(floppypipe.png);
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background-repeat: no-repeat;
+    left: 0px;
+    animation: rullSjukt2 3s linear infinite;
+}
+
+#b1 {
+    
+    background-size: 120px 200px;
+    top: 403px;
+}
+
+#b2 {
+    background-size: 120px 250px;
+    top: -353px;
+    transform: rotateX(180deg);
+}
+
+#body {
+    overflow: hidden;
+}
+
+#poeng {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    width: 50px;
+    height: 20px;
+    color: red;
+    font-size: 1.2em;
+    background-color: black;
+    border: 2px solid red;
+}

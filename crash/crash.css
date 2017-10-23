@@ -1,0 +1,96 @@
+#main {
+    border: 2px solid green;
+    position: relative;
+    width: 510px;
+    height: 510px;
+    overflow: hidden;
+}
+
+#hus1, #hus2, #hus3, #hus4 {
+    position: absolute;
+    border: 2px black solid;
+    width: 200px;
+    height: 200px;
+}
+
+#hus1 {
+    
+    left: 10px;
+    top: 10px;
+    background: red;
+}
+
+#hus2 {
+   
+    left: 300px;
+    top: 10px;
+    background: #2A83D2;
+}
+
+#hus3 {
+   
+    left: 10px;
+    top: 300px;
+    background: yellow;
+}
+
+#hus4 {
+   
+    left: 300px;
+    top: 300px;
+    background: green;
+}
+
+#b1, #b2 {
+    position: absolute;
+    height: 35px;
+    width: 20px;
+    border: 1px solid black;
+}
+
+#b1 {
+    background: cyan;
+    left: 225px;
+    top: 10px;
+    animation: bilTo 2s forwards linear;
+}
+
+#b2 {
+    right: 225px;
+    bottom: 10px;
+    background: limegreen;
+    animation: sjuktNavn 2s forwards linear;
+}
+
+#eksplosjon {
+    position: absolute;
+    left: 225px;
+    top: 195px;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-image: url("floppybird.png");
+    animation: eksplosjon 2s linear forwards;
+}
+
+@keyframes sjuktNavn {
+    0% { bottom: 10px; right: 225px; opacity: 1; }
+    50% { bottom: 170px; right: 225px; transform: rotate(0deg); opacity: 1;}
+    70% { bottom: 220px; right: 240px; transform: rotate(-30deg); opacity: 1; }
+    85% { right: 260px; bottom: 255px; transform: rotate(-60deg); opacity: 1; }
+    99% { right: 270px; bottom: 254px; transform: rotate(-90deg);opacity: 1;}
+    100% { right: 270px; bottom: 254px; transform: rotate(-90deg);opacity: 0;}
+    
+}
+
+@keyframes bilTo {
+    0% {left: 225px; top: 10px; opacity: 1; }
+    99% {left: 225px; top: 195px; opacity: 1; }
+    100% {left: 225px; top: 195px; opacity: 0; }
+}
+
+@keyframes eksplosjon {
+    0% {left: 225px; top: 195px; opacity: 0;}
+    99% {left: 225px; top: 195px; opacity: 0;}
+    100% {left: 225px; top: 195px; opacity: 1;}
+}

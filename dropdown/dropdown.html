@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="dropdown.css">
+    <script src="dropdown.js"></script>
+</head>
+
+<body>
+    <h1>Beregn kjøretid</h1>
+
+    <p>Fra</p>
+    <select id="fra">
+        <option value="0">Bergen</option>
+        <option value="1">Oslo</option>
+        <option value="2">Trondheim</option>
+    </select>
+
+    <p>Til</p>
+    <select id="til">
+        <option value="0">Bergen</option>
+        <option value="1">Oslo</option>
+        <option value="2">Trondheim</option>
+    </select>
+
+    <br>
+    <br>
+    <button id="calc" type="button"> Beregn </button>
+    <div id="output"></div>
+    <script>
+        setup();
+    </script>
+</body>
+
+</html>
