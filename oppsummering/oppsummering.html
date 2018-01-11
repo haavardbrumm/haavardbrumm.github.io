@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="oppsummering.js"></script>
+    <link rel="stylesheet" href="oppsummering.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <form>
+        <br>Forbruk <select id="forbruk" name="forbruk">
+            <option value="0.8">mercury 4hp</option>
+            <option value="1.3">yamaha 60hp</option>
+            <option value="3.7">evinrude 200hp</option>
+                </select>
+        <br>Tank <input id="tank"type="number"> liter
+        <br> <button id="beregn" type="button">Beregn</button>
+        <p>
+        Rekkevidde =<span id="rekkevidde"></span>
+        </p>
+        </form>
+    </div>
+    <script>
+        setup();
+    </script>
+</body>
+</html>

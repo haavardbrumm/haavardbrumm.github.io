@@ -1,0 +1,16 @@
+#bleng {
+  width:200px;
+  height:200px;
+  border:solid red 1px;
+  color:blue;
+  font-size:2px;
+  background:bleu;
+  text-align:center;
+}
+.nik {
+  width:200px;
+  height:30px;
+  font-size:2em;
+  font-color:green;
+  background:#ff0;
+}

@@ -1,0 +1,76 @@
+#tegning {
+    border: 2px black solid;
+    left:0px;
+    top:0px;
+}
+
+#figurer {
+    position: absolute;
+    border: 2px red solid;
+    width: 500px;
+    height: 100px;
+    left:8px;
+    top:510px;
+}
+
+#firkant {
+    position: absolute;
+
+}
+
+#sirkel {
+    
+}
+
+#trekant {
+    
+}
+
+#visk {
+    
+}
+
+#farger {
+    position: absolute;
+
+    width: 100px;
+    height: 500px;
+    left:510px;
+    top:8px;
+}
+
+#rod {
+    position: absolute;
+    height: 121px;
+    width: 100px;
+    border: 2px red solid;
+    left: 0px;
+    top: 0px;
+}
+
+#gronn {
+    position: absolute;
+    height: 121px;
+    width: 100px;
+    border: 2px green solid;
+    left: 0px;
+    top: 125px;
+}
+
+#gul {
+    position: absolute;
+    height: 121px;
+    width: 100px;
+    border: 2px yellow solid;
+    left: 0px;
+    top: 250px;
+}
+
+#bla {
+    position: absolute;
+    height: 121px;
+    width: 100px;
+    border: 2px blue solid;
+    left: 0px;
+    top: 375px;
+}
