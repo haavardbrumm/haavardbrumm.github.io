@@ -4,6 +4,10 @@ function setup() {
     let main = document.getElementById("main");
     let poengDiv = document.getElementById("poeng");
     let gameover = document.getElementById("gameover");
+    let audio = document.getElementById("audio");
+    let nintendo = document.getElementById("nintendo");
+
+    nintendo.play();
 
     document.onkeydown = checkKey;
 
@@ -154,6 +158,7 @@ function setup() {
             respawn();
             length += 2;
             poeng += 1;
+            audio.play();
         }
     }
     respawn();
@@ -182,6 +187,15 @@ function setup() {
 
 function siteReload() {
     location.reload();
+}
+
+function muteAudio() {
+    if (nintendo.muted === false) {
+        nintendo.muted = true;
+    }
+    else if (nintendo.muted === true) {
+        nintendo.muted = false;
+    }
 }
 
 //bruker array og løkker for å gå gjennom array. bruker også object på snakeP(os), epleP(os)

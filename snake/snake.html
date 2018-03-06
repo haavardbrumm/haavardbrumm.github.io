@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +9,21 @@
     <script src="snake.js"></script>
     <title>Snek</title>
 </head>
+
 <body>
-    <div id="poeng"></div>
-    <button type="button" id="knapp" onclick="siteReload()">Start på nytt</button>
-    <div id="main">
-        <div id="snake"></div>
-        <div id="eple"></div>
-        <div id="gameover" onclick="siteReload()">
-            <h1>Game Over</h1>
-            <h4>Prøv på nytt</h4>
+    <div id="bakgrunn">
+        <div id="poeng"></div>
+        <button type="button" id="knapp" onclick="siteReload()">Start på nytt</button>
+        <button type="button" id="mute" onclick="muteAudio()">Mute/Unmute</button>
+        <div id="main">
+            <audio loop="loop" src="nintendo.mp3" id="nintendo"></audio>
+            <audio src="supermario.mp3" id="audio"></audio>
+            <div id="snake"></div>
+            <div id="eple"></div>
+            <div id="gameover" onclick="siteReload()">
+                <h1>Game Over</h1>
+                <h4>Prøv på nytt</h4>
+            </div>
         </div>
     </div>
 
@@ -24,4 +31,5 @@
         setup();
     </script>
 </body>
+
 </html>

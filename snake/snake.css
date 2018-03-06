@@ -5,6 +5,7 @@
     height: 506px;
     border: black 2px solid;
     overflow: hidden;
+    background: black;
 }
 
 #snake {
@@ -41,6 +42,7 @@ body {
 #poeng {
     position: absolute;
     left: 217px;
+    border: 2px green solid;
 }
 
 #gameover {
@@ -60,4 +62,21 @@ body {
     position: absolute;
     left: 288px;
     top: 530px;
+}
+
+#mute {
+    position: absolute;
+    left: 375px;
+    top: 530px;
+}
+
+#bakgrunn {
+    background: url("bakgrunn.jpg");
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
 }
