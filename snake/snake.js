@@ -12,7 +12,7 @@ function setup() {
     document.onkeydown = checkKey;
 
     let styleS = snake.style;
-    let poeng = 1;
+    let poeng = 0;
     let retning = 0;
     let vx = 22;
     let vy = 22;
@@ -87,6 +87,8 @@ function setup() {
         }
     }
 
+    poengDiv.innerHTML = "Poeng: " + poeng;
+
     function run() {
         death();
         retningChange = 0;
@@ -149,7 +151,7 @@ function setup() {
             haleDiv[i].style.left = last[i][0] + "px";
             haleDiv[i].style.top = last[i][1] + "px";
         }
-
+        
         eat();
     }
 
@@ -157,7 +159,6 @@ function setup() {
         if (snakeP.x === epleP.x && snakeP.y === epleP.y) {
             respawn();
             length += 2;
-            poeng += 1;
             audio.play();
         }
     }
@@ -179,6 +180,7 @@ function setup() {
         }
         eple.style.left = epleP.x + "px";
         eple.style.top = epleP.y + "px";
+        poeng += 100;
         console.log(epleP.x / 22, epleP.y / 22)
 
     }

@@ -3,7 +3,7 @@
     left: 288px;
     width: 704px;
     height: 506px;
-    border: black 2px solid;
+    border: rgb(0, 119, 255) 2px solid;
     overflow: hidden;
     background: black;
 }
@@ -41,8 +41,11 @@ body {
 
 #poeng {
     position: absolute;
-    left: 217px;
-    border: 2px green solid;
+    left: 20px;
+    top: 20px;
+    border: 2px limegreen solid;
+    background-color: green;
+    font-size: 23px;
 }
 
 #gameover {
@@ -55,8 +58,6 @@ body {
     color: white;
     text-align: center;
 }
-
-
 
 #knapp {
     position: absolute;
