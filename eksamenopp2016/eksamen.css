@@ -24,11 +24,11 @@
     border: 2px solid black;
     width: 300px;
     height: 225px;
-    background-size: cover;
-    background-repeat: no-repeat;
     top: 5px;
     left: 315px;
-    background-image: url("roma.jpg");
+}
+
+#spaghet {
     
 }
 

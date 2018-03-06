@@ -1,0 +1,40 @@
+#ramme {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.minical {
+    width: calc( (100vw - 50px) / 3);
+    height: calc( (100vh - 100px) / 4);
+    min-height: 60px;
+    min-width: 90px;
+    background-color: green;
+    margin: 5px;
+}
+
+.ukedager {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.dag {
+    width: calc( (100vw - 100px) / 21);
+    height: calc( (100vh - 100px) / 35);
+    min-height: 8px;
+    background-color:limegreen;
+    margin: 1px;
+}
+
+
+.dato {
+    width: calc( (100vw - 100px) / 21);
+    height: calc( (100vh - 100px) / 42);
+    min-height: 6px;
+    background-color:lightgreen;
+    margin: 1px;
+}
+
+.maaned {
+    text-align:center;
+    font-size: calc((120vh - 100px) / 42 );
+}
