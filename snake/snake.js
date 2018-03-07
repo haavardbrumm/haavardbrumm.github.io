@@ -24,7 +24,7 @@ function setup() {
 
     let alive = 1;
 
-    let length = 3;
+    let length = 300;
 
     snakeP = {
         x: Math.floor(Math.random() * 32) * 22,
@@ -169,20 +169,16 @@ function setup() {
         epleP.y = Math.floor(Math.random() * 23) * 22;
 
         for (let i = 0; i < last.length; i++) {
-            if (epleP.x !== last[i][0] && epleP.y !== last[i][1]) {
-                poengDiv.innerHTML = "Poeng: " + poeng;
-            }
-            else {
-                //lett måte å spawne eple der slangen ikke er på, men når slangen blir veldig lang vil
-                //det oppstå problemer med å respawne eple
+            if (epleP.x === last[i][0] && epleP.y === last[i][1]) {
                 return respawn();
             }
+            
         }
-        eple.style.left = epleP.x + "px";
-        eple.style.top = epleP.y + "px";
-        poeng += 100;
-        console.log(epleP.x / 22, epleP.y / 22)
-
+            eple.style.left = epleP.x + "px";
+            eple.style.top = epleP.y + "px";
+            poengDiv.innerHTML = "Poeng: " + poeng;
+            poeng += 100;
+            console.log(epleP.x / 22, epleP.y / 22); 
     }
 
 }
