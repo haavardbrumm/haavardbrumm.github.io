@@ -200,12 +200,8 @@ function muteAudio() {
 //bruker eventlistener (sette retning på slangen)
 //funksjoner styrt av hendelser (eat funk, respawn funk, death funk,..) - if setninger
 
-    //har en liten bug når jeg skal skifte retning på snake flere (2) ganger fort (snake går inni seg selv,
-    //og det er gameover). skal prøve å fikse det ved å sette en variabel retningChange = true
-    //hvis retningChange = true, kan man ikke skifte retning flere ganger den loopen
-//FIXED
 
-//har lyst til å legge til flere baner man kan velge mellom (class Wall), leaderboard som lagres, 
+//har lyst til å legge til flere baner man kan velge mellom (class Wall) 
 //må gjøre slik at eple ikke kan spawne under slangen
 
 
