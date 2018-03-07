@@ -24,7 +24,7 @@ function setup() {
 
     let alive = 1;
 
-    let length = 300;
+    let length = 3;
 
     snakeP = {
         x: Math.floor(Math.random() * 32) * 22,
