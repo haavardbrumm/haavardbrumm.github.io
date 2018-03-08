@@ -190,9 +190,11 @@ function siteReload() {
 function muteAudio() {
     if (nintendo.muted === false) {
         nintendo.muted = true;
+        audio.muted = true;
     }
     else if (nintendo.muted === true) {
         nintendo.muted = false;
+        audio.muted = false;
     }
 }
 
