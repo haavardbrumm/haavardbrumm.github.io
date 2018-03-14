@@ -94,6 +94,7 @@ function setup() {
         retningChange = 0;
         if (alive === 0) {
             gameover.style.opacity = 1;
+            poeng = poeng - 100;
             gameover.innerHTML = "<h1>Game Over</h1><h4>Prøv på nytt</h4>Du fikk: " + poeng + " poeng!";
             clearInterval(gameLoop);
             return;
