@@ -1,0 +1,92 @@
+#main {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: skyblue;
+    left: 0;
+    top: 0;
+    z-index: -2;
+}
+
+#gress {
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    top: 60vh;
+    height: 300px;
+    background-color: limegreen;
+    z-index: -1
+
+}
+
+#sol {
+    position: absolute;
+    left: 1000px;
+    top: 50px;
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+#vindmolle {
+    background-size: contain;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    width: 300px;
+
+}
+
+#vindmollepropell {
+    position: absolute;
+    background-image: url("vindmollepropell.png");
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+    left: 25px;
+    top: -155px;
+    transform: rotate(0);
+    transform-origin: 176px 378px;
+}
+
+#hus {
+    left: 300px;
+    top: 300px;
+    position: absolute;
+}
+
+#oppg2 {
+    position: absolute;
+    left: 1000px;
+    top: 200px;
+    background-color: white;
+    border: 2px black solid;
+}
+
+#vind {
+    position: absolute;
+    left: 1000px;
+    top: 270px;
+}
+
+#knapp {
+    position: absolute;
+    left: 40px;
+    top: 650px;
+}
+
+#tre {
+    background-image: url("tre1.png");
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    left: 500px;
+    top: 40px;
+    background-repeat: no-repeat;
+}
+
+@keyframes turn {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(1turn);}
+}

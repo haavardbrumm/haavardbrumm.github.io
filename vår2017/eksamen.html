@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="eksamen.js"></script>
+    <link rel="stylesheet" href="eksamen.css">
+    <title>Eksamen</title>
+</head>
+
+<body>
+    <div id="main">
+        <div id="tre"></div>
+        <img id="vindmolle" src="vindmollestamme.png">
+        <div id="vindmollepropell"></div>
+        <div id="gress"></div>
+        <div id="sol"></div>
+        <img id="hus" src="hus.png">
+        <div id="oppg2">
+            <form>
+                Skriv inn m/s:
+                <input type="number" id="input">
+                <br> Det gir:
+                <input id="antwatt" type="number">Watt
+                <br>
+                <button id="button" type="button">Submit</button>
+            </form>
+        </div>
+        
+            <select id="vind">
+                <option>-- Velg fra liste -- </option>
+                <option value = 1>Stille</option>
+                <option value = 2>Lett bris</option>
+                <option value = 3>Stiv kuling</option>
+            </select>
+            <div id="knapp">
+                <button id="stille" type="button">Stille</button>
+                <button id="bris" type="button">Lett bris</button>
+                <button id="kuling" type="button">Stiv kuling</button>
+            </div>
+    </div>
+    <script>
+        setup();
+    </script>
+</body>
+
+</html>
